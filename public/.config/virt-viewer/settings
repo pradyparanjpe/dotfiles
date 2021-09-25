@@ -1,0 +1,8 @@
+[virt-viewer]
+share-clipboard=true
+ask-quit=true
+
+#usmita
+
+[fc5dafbb-c1eb-4508-b44a-6b10fdef4aa5]
+monitor-mapping=1:1;

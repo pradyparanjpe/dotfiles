@@ -1,0 +1,8 @@
+# shellcheck shell=sh
+
+# shellcheck source=".local/share/pspman/src/runcom/bash_login"
+if [ -f "${RUNCOMDIR}"/bash_login ]; then
+    # shellcheck disable=SC1091
+    . "${RUNCOMDIR}"/bash_login
+fi
+

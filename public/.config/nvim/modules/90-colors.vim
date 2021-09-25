@@ -1,0 +1,19 @@
+let g:airline_theme='jellybeans'
+highlight Normal        cterm=None  ctermbg=0       ctermfg=247     gui=None    guibg=0         guifg=#9e9e9e
+highlight Function      cterm=None  ctermbg=None    ctermfg=176     gui=None    guibg=None      guifg=#d787d7
+highlight Constant      cterm=None  ctermbg=None    ctermfg=124     gui=None    guibg=None      guifg=#af0000
+highlight Statement     cterm=None  ctermbg=None    ctermfg=68      gui=None    guibg=None      guifg=#5f87d7
+highlight String        cterm=None  ctermbg=None    ctermfg=115     gui=None    guibg=None      guifg=#87d7af
+highlight Boolean       cterm=None  ctermbg=None    ctermfg=160     gui=None    guibg=None      guifg=#d70000
+highlight Identifier    cterm=None  ctermbg=None    ctermfg=186     gui=None    guibg=None      guifg=#d7d787
+highlight Comment       cterm=None  ctermbg=233     ctermfg=239     gui=None    guibg=#121212   guifg=#4e4e4e
+highlight Error         cterm=None  ctermbg=88      ctermfg=255     gui=None    guibg=#870000   guifg=#ffffff
+highlight Underlined    cterm=None  ctermbg=None    ctermfg=80      gui=None    guibg=None      guifg=#5fd7d7
+highlight Structure     cterm=None  ctermbg=None    ctermfg=204     gui=None    guibg=None      guifg=#ff5f87
+highlight StorageClass  cterm=None  ctermbg=None    ctermfg=198     gui=None    guibg=None      guifg=#ff0087
+highlight Type          cterm=None  ctermbg=None    ctermfg=208     gui=None    guibg=None      guifg=#ff8700
+highlight DocString     cterm=None  ctermbg=None    ctermfg=172     gui=None    guibg=None      guifg=#d78700
+highlight Pmenu         cterm=None  ctermbg=235     ctermfg=245     gui=None    guibg=#262626   guifg=#8a8a8a
+highlight LineNr        cterm=None  ctermbg=None    ctermfg=246     gui=None    guibg=None      guifg=#949494
+highlight CursorLineNr  cterm=None  ctermbg=None    ctermfg=246     gui=None    guibg=None      guifg=#949494
+highlight Visual        cterm=None  ctermbg=237     ctermfg=None    gui=None   guibg=#3a3a3a   guifg=None

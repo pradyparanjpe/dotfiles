@@ -1,0 +1,90 @@
+# -*- mode:org; coding: utf-8; -*-
+#+TITLE: dotfiles
+#+AUTHOR: Pradyumna Paranjape
+#+OPTIONS: toc:2 num:nil html-postamble:nil ^:nil
+#+STARTUP: overview
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+HTML_HEAD: <style> @media only screen and (max-width: 960px) {#content{background-color: #e7f0f7; color: 101018; max-width: 100%; overflow-x: scroll;}} </style>
+#+HTML_HEAD: <style> body{background-color: #e7f0f7; color: 101018; font-size: 18px;} </style>
+#+HTML_HEAD: <style> #content{background-color: #e7f0f7; color: 101018;} </style>
+#+HTML_HEAD: <style> #left-panel-button{display: none;}</style>
+#+HTML_HEAD: <style> #minitoc{display: none;}</style>
+#+HTML_HEAD: <style> #tabs{background-color: #e5e7ea; font-size: 18px;} </style>
+#+HTML_HEAD: <style> #tabs li a{background-color: #e5e7ea; font-size: 18px;} </style>
+#+HTML_HEAD: <style> .buttons{background-color: #f2f3f4;} </style>
+#+HTML_HEAD: <style> #table-of-contents header{background-color: #e7f0f7; color: 101018;}</style>
+#+HTML_HEAD: <style> table, th, td {border: none; border-left: none; border-right: none;} </style>
+#+HTML_HEAD: <style> b{background-color: #e7f0f7; color: #000000;} </style>
+#+HTML_HEAD: <style> i{background-color: #e7f0f7; color: 101018;} </style>
+#+HTML_HEAD: <style> a, a:link, a:visited, a:hover{color: #0087bf; text-decoration: none}</style>
+#+HTML_HEAD: <style> h1{color: #e00030; background: #f6fafe; font-size: 2em;} </style>
+#+HTML_HEAD: <style> h2{color: #0040c0; font-size: 1.75em; border-bottom: 1px solid #585c60;} </style>
+#+HTML_HEAD: <style> h3{color: #00c060; font-size: 1.5em; border-bottom: 1px dotted #585c60;} </style>
+#+HTML_HEAD: <style> h4{color: #7f8f00; font-size: 1.25em; border-bottom: none;} </style>
+#+HTML_HEAD: <style> code{color: #4f0000; background: #ffffff; font-weight: bold} </style>
+#+HTML_HEAD: <style> table thead th{background-color: #ffffff;}</style>
+#+HTML_HEAD: <style> table tr:nth-child(2n-1) td{background-color: #e7e7ef;}</style>
+#+HTML_HEAD: <style> table tr:nth-child(2n) td{background-color: #f7f7ff;}</style>
+
+* Dotfiles
+  These are my dotfiles. Anyone may use them following guidelines described in [[https://www.gnu.org/licenses/gpl-3.0.html][GNU-GPL]].
+
+* Copyright/License Header
+  Copyright 2021 Pradyumna Paranjape
+
+  This file is part of dotfiles.
+
+  dotfiles is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  dotfiles is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with dotfiles.  If not, see <https://www.gnu.org/licenses/>.
+
+* Scope
+  These files may be useful only for GNU/Linux (or maybe MacOS).
+  But I use them only for Linux and don't know how they behave inside MacOS.
+
+* Warning
+  Following important configurations and many others in =~/.config= *shall* get replaced. So they ought to be backed-up.
+    - =~/.bashrc=
+    - =~/.bash_profile=
+    - =~/.bash_login=
+    - =~/.profile=
+    - =~/.zprofile=
+    - =~/.zshrc=
+    - =~/.zlogin=
+
+* Usage
+  - Install [[https://www.gnu.org/software/stow/][GNU/Stow]].
+  - Install [[https://git-scm.com/][git]].
+  - Backup already existing configurations by renaming them.
+    - Configurations are located in =${HOME}/.config= and in =${HOME}=
+  - Clone this repository and navigate to it
+ #+begin_src sh
+   git clone "https://github.com/pradyparanjpe/dotfiles.git"
+   cd dotfiles
+#+end_src
+
+  - My publicly visible dotfiles are located inside =public= folder.
+  - Ask =stow= to simulate symlinking configurations
+
+ #+begin_src sh
+   stow -nvS -t ~ -d . public
+#+end_src
+
+  - If the output looks satisfactory, ask =stow= to create real symlinks.
+ #+begin_src sh
+   stow -S -t ~ -d . public
+#+end_src
+
+
+* See Also
+  - [[https://pradyparanjpe.github.io/runcom][runcom]]
+  - [[https://pradyparanjpe.gitlab.io/pspman/][pspman]]
